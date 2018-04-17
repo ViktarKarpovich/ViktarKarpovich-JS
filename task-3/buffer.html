@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+       
+    </head>
+    
+    <body>
+        <p>buffer</p>
+         <script>
+             function makeBuffer() 
+             {
+                let text = '';
+
+                  return function(piece) 
+                  {
+                    if (arguments.length == 0) 
+                    {
+                      return text;
+                    }
+                    text += piece;
+                  };
+                };
+
+                var bufferWords = makeBuffer();
+             
+                bufferWords('Замыкания');
+                bufferWords ('Использовать');
+                bufferWords('Нужно!');
+                
+                document.write(bufferWords());
+                document.write("<br>");
+                var bufferNum = makeBuffer();
+                bufferNum(0);
+                bufferNum(1);
+                bufferNum(0);
+
+                document.write( bufferNum()); // '010'                
+        </script>
+    </body>
+</html>
