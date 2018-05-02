@@ -1,0 +1,85 @@
+.vk-datepicker__wrapper {
+    display: flex;
+    justify-content: left;
+}
+
+.vk-datepicker__calendar {
+    width: 300px;
+    display: flex;
+    flex-flow: column wrap;
+    line-height: 180%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FAFAFA;
+    border: 1px solid #d3d3d3;
+    border-radius: 5px;
+}
+
+.vk-datepicker__title-container {
+    margin-top: 3px;
+    width: 97%;
+    text-align: center;
+    background-color: #f0f0f0;
+    border: 1px solid #d5d5d5;
+    border-radius: 5px;
+}
+
+.vk-datepicker__title {
+    display: inline-block;
+    font-family: Arial, sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.vk-datepicker__button {
+    font-size: 20px;
+    color: #000000a9;
+}
+
+.vk-datepicker__button:hover {
+    color: #ffd17c;
+    transition: 0.2s ease-in-out;
+}
+
+.vk-datepicker__days-name {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 97%;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+}
+
+.vk-datepicker__days-name-day {
+    display: inline-block;
+    width: calc(100% / 7);
+    text-align: center;
+}
+
+.vk-datepicker__weeks-container {
+    width: 97%;
+}
+
+.vk-datepicker__weeks-week {
+    margin-bottom: 5px;
+    background-color: #FAFAFA;
+}
+
+.vk-datepicker__week_day {
+    display: inline-block;
+    padding-right: 4px;
+    margin-right: 2px;
+    width: 11.5%;
+    text-align: right;
+    background-color: #f0f0f0;
+    border: 1px solid #d3d3d3;
+}
+
+.vk-datepicker__week_day:hover {
+    background-color: yellow;
+    border-color: #999600;
+    transition: 1s all;
+}
